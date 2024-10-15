@@ -44,3 +44,39 @@ The system design process is complex, and **one design doesn't fit all**. Below 
 33. **Handling large-scale simultaneous connections** - Use **Connection Pooling** and consider using **Protobuf** to minimize data payloads.
 
 **Credit**: Dinesh Varyani
+
+
+# What do Amazon, Netflix, and Uber have in common?  
+
+They are extremely good at **scaling their system** whenever needed.  
+
+Here are **8 must-know strategies** to scale your system:  
+
+### 1 - Stateless Services  
+Design stateless services because they don’t rely on server-specific data, making them easier to scale.  
+
+### 2 - Horizontal Scaling  
+Add more servers to **distribute the workload** across multiple instances.  
+
+### 3 - Load Balancing  
+Use a **load balancer** to distribute incoming requests evenly across multiple servers.  
+
+### 4 - Auto Scaling  
+Implement **auto-scaling policies** to dynamically adjust resources based on real-time traffic.  
+
+### 5 - Caching  
+Use **caching** to reduce the load on the database and efficiently handle repetitive requests.  
+
+### 6 - Database Replication  
+Replicate data across multiple nodes to **scale read operations** and improve redundancy.  
+
+### 7 - Database Sharding  
+Distribute data across multiple instances to **scale both write and read operations**.  
+
+### 8 - Async Processing  
+Move time-consuming and resource-intensive tasks to **background workers** using async processing to scale out new requests.  
+
+---
+
+**Over to you:** Which other strategies have you used?  
+
